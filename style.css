@@ -1,5 +1,6 @@
 body {
     background-color: lightgrey;
+    position: relative;
 }
 
 
@@ -24,9 +25,14 @@ h2 {
     width: 100%;
 }
 
-
+.heading {
+    font-size: 30px;
+    color: black;
+}
 
 .banner {
+
+
     background-color: rgba(0, 0, 0, 0.2);
     /*sets the background color to be transparent */
     /* (cont.) without affecting the actual text color itself */
@@ -37,6 +43,7 @@ h2 {
     font-size: 40px;  /*static font size but can change to make it responsive */
 
 }
+
 
 a:visited {
     color: white;
@@ -71,142 +78,177 @@ a:visited {
 
 
 
-.flex-container {
-    margin-top: 60px;
-    display : flex;
-    flex-wrap: nowrap; /*default indictates no wrapping between contents aka horizontal line */
-    justify-content: space-between; /*evely spaces all children */
-    padding: 25px;
-    flex-direction: row; 
-}
 
-
-
-/* b1 b2 and b3 are the three blocks: prof exp... etc */
-/* will need to refactor to reduce redundencies */
-
-/* @media screen and (max-width: 500px) {
-    div#b1wrap {
-        order: 0;
-    }
-    div#b2wrap {
-        order: 1;
-    }
-    div#b3wrap {
-        order: 2;
-    }
-} */
-
-.b1wrap {
+.bigContainer {
+    margin-top: 35px;
     display: flex;
-    background-color: lightcoral;
-    padding: 20px;
-    border-radius: 50px;
+    /* justify-content: space-evenly; */
+    gap: 50px;
+    
 
-}
-.b1 {
-    background-color: grey;
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    border-radius: 25px;
-}
-
-.b2wrap {
-    display: flex;
-    background-color: lightcoral;
-    padding: 20px;
-    border-radius: 50px;
-}
-
-.b2 {
-    background-color: grey;
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    border-radius: 25px;
 
 }
 
-.b3wrap {
-    display: flex;
-    background-color: lightcoral;
-    padding: 20px;
-    border-radius: 50px;
-}
-
-.b3 {
-    background-color: grey;
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    border-radius: 25px;
-
-}
-/* .flex-container > div {
-    background-color: grey;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-
-} */
 
 
-.aboutMeFlex {
+.Portfolio {
     display: flex;
     flex-direction: column;
+    position: relative;
+    background-color: lightgrey; /*ask about this */
+    
+    padding-right: 0px;
+    flex-basis:0;
+    flex-grow:1;
+}
 
+.port-img >img{
+    width: 100%;
+    flex-basis:0;
+    flex-grow:1;
 
 }
 
+ .port-whiteBlock {
+    flex-basis:0;
+    /* flex-grow:1; */
+    border: solid;
+    border-color: blue; /*could make blue tho*/
+    background-color: lightseagreen;
+    padding-bottom: 10px;
+    border: solid;
+    border-color: black;
+
+    
+ }  
 
 
+      .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+      }
 
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*this is old code */
-.mainWrapper {
-    max-width: 800px;
+button {
+    display: block;
     margin: auto;
-    /* centers */
-    padding: 10px;
+    border-radius:25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3.5%;
+    font-size: 18px;
+    margin-bottom: 0%;
+    border: solid;
+
+    
 }
 
-.whiteWrapper {
-    border-radius: 25px;
+
+
+
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     background-color: white;
-    border: 25px solid white;
-    padding: 20px;
-    width: 600px;
-    height: 400px;
-    margin: auto;
+    border: solid;
+    border-color: black;
+    padding-right: 0px;
+    flex-basis:0;
+    flex-grow:1;
+
+
 }
 
-/* h2.firstHeader {
-       background-color: aqua;
-   } */
+.ab-img > img {
+    flex-basis:0;
+    flex-grow:1;
+    width: 100%;
+    
+}
+
+.ab-whiteBlock {
+    flex-basis:0;
+    flex-grow:1;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    border: solid;
+    border-color: black;
+}
+
+
+
+
+
+
+
+
+.Hobbies {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border: solid;
+    border-color: black;
+    padding-right: 0px;
+    flex-basis:0;
+    flex-grow:1;
+}
+
+.hb-img {
+    max-height: 29%;
+}
+
+.hb-img >img{
+    width: 100%;
+    flex-basis:0;
+    flex-grow:1;
+    max-height: 100%;
+  
+    
+
+}
+
+.hb-whiteBlock {
+    flex-basis:0;
+    flex-grow:1;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    border: solid;
+    border-color: black; /*could make blue tho*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
