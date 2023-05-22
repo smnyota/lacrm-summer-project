@@ -106,6 +106,7 @@ a:visited {
     width: 100%;
     flex-basis:0;
     flex-grow:1;
+   
 
 }
 
@@ -166,7 +167,12 @@ button {
     flex-basis:0;
     flex-grow:1;
     width: 100%;
+
     
+}
+
+.ab-img {
+    max-height: 29%;
 }
 
 .ab-whiteBlock {
@@ -222,11 +228,50 @@ button {
 
 
 
+.contactSection {
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom: 1rem;
+    background-color: #f6f5f3;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
 
+}
 
+.contactHeader {
+    margin-bottom: 2rem;
+    border-bottom: solid;
+    font-size: 2.75rem;
+}
 
+.contactBody {
+    width: 30%;
+}
+ 
+.fd {
+    display: flex;
+    flex-direction: column;
+}
 
+.fname {
+    padding: 0.75rem;
+    margin: 0.7rem 0;
+    border: 1px solid transparent;
+}
 
+.lname {
+    padding: 0.75rem;
+    margin: 0.7rem 0;
+    border: 1px solid transparent;
+}
+
+.message {
+    padding: 0.75rem;
+    margin: 0.7rem 0;
+    border: 1px solid transparent;
+}
 
 
 
